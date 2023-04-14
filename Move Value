@@ -1,0 +1,21 @@
+#Given an array of integers move any elements equal to the specified value to the end of the array and preserve the same order of the rest of the elements.
+import re
+import math
+from json import loads
+
+str_mat=input()
+lst=loads(str_mat)
+n=float(input())
+for itr in range(len(lst)):
+    for itr in range(len(lst)):
+        
+      # check the condition
+        if(lst[itr] == n):
+            
+            b=itr            
+            a=lst.pop(b) #remove 1
+            lst.append(a)
+    
+
+
+print(lst)        
