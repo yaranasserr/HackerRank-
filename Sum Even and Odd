@@ -1,0 +1,29 @@
+# Given an array of integers, return the sum of even and odd elements.
+import re
+input_string = input()
+user_list=re.findall(r"[+-]?\d+(?:\.\d+)?", input_string)
+
+lst=[]
+even_sum=0
+odd_sum=0
+# convert each item to int type
+for i in range(len(user_list)):
+   
+         user_list[i] = int(user_list[i])
+         lst.append(user_list[i])
+for i in range(len(lst)):
+    if (lst[i]%2==0):
+        even_sum=even_sum+ lst[i]
+        
+    else:
+        odd_sum=odd_sum + lst[i]
+lst=[even_sum,odd_sum]
+print(lst)
+        
+    
+        
+        
+        
+
+        
+        
