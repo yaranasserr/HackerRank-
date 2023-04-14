@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+input_string = input()
+
+#user_list = input_string.split(",")
+# print list
+user_list=re.findall(r"[+-]?\d+(?:\.\d+)?", input_string)
+#print(user_list)
+
+
+lst=[]
+# convert each item to int type
+for i in range(len(user_list)):
+   
+         user_list[i] = int(user_list[i])
+         lst.append(user_list[i])
+        
+    # convert each item to int type
+  
+
+print(lst[::-1])
