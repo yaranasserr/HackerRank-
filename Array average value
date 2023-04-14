@@ -1,0 +1,35 @@
+import re
+import math
+
+
+input_string = input()
+
+user_list=re.findall(r"[+-]?\d+(?:\.\d+)?", input_string)
+
+
+lst=[]
+summ=0
+# convert each item to int type
+for i in range(len(user_list)):
+   
+         user_list[i] = float(user_list[i])
+         lst.append(user_list[i])
+        
+    # convert each item to int type
+for i in range(len(user_list)):
+    
+    #if(isinstance(lst[i],int)):
+    if(lst[i].is_integer()):
+        
+        lst[i]=int(lst[i])
+    else:
+        lst[i]=lst[i]
+if lst==[]:
+    
+    print(0.0)
+else:
+    for i in lst:
+        summ = summ + i
+        
+    av=summ/len(lst)
+    print(av)
